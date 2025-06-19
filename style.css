@@ -1,0 +1,329 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+    }
+
+    header {
+      background-color: whitesmoke;
+      color: #333333;
+      border-bottom: #000000 1px solid;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+    #adlogo{
+      height: 5rem;
+      width: 16rem;
+      padding-left: 1rem;
+
+    }
+    nav {
+      display: flex;
+      gap: 1.5rem;
+
+    }
+
+    nav a {
+      color: #333333;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    #menuhover a:hover{
+     color: rgb(255, 255, 255);
+     background-color: black;
+     border: rgb(0, 0, 0);    
+     border-radius: 2rem;
+     width: 7rem;
+     text-align: center;
+     height: auto;
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .menu-toggle span {
+      width: 25px;
+      height: 3px;
+      background: white;
+    }
+
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #444;
+      padding: 1rem 2rem;
+    }
+
+    .mobile-menu a {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #555;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+
+      .mobile-menu.active {
+        display: flex;
+      }
+    }
+   
+    .content{
+      background-color: #F5F5F5;
+      color:#333333;
+
+    }
+    .main-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.section-title {
+  text-align: flex;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background-color: #fff;
+  object-fit:cover;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  margin: 15px;
+  font-size: 1.2rem;
+  color: #333333;
+}
+
+.product-card p {
+  margin: 0 15px 10px;
+  font-size: 0.95rem;
+  color: #333333;
+}
+
+
+footer {
+  background-color: #333;
+  color:#ffffff;
+  text-align: center;
+  padding: 2.5rem;
+  margin-top: 3rem;
+}
+
+.section {
+  padding: 40px 20px;
+  margin-top: 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px; /* Kartlar arası boşluk */
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  background-color: #ffffff;
+  color: #333333;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  border: 1px solid #222;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.product-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.whatsapp-button, .instagram-button {
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 10px;
+  color: #333333;
+  background-color: #25D366; /* WhatsApp yeşili */
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.instagram-button {
+  background-color: #C13584; /* Instagram mor-pembe */
+}
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      text-align: left;
+      font-size: 32px;
+      border-left: 6px solid #e74c3c;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .service-box {
+      border: 1px solid #eee;
+      padding: 20px;
+      background: #979797;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .service-box:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .icon {
+      font-size: 30px;
+      color: #e74c3c;
+      margin-bottom: 10px;
+    }
+
+    .service-title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #000000;
+    }
+
+    .service-description {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .service-box:hover{
+      background-color: skyblue;
+      transition: (1,05);
+    }
+    #galeri{
+  display: flex;
+  margin-top: 2rem;
+  flex-wrap: wrap; /* Taşanları alta geçirir */
+  gap: 4px; /* Resimler arası 3px boşluk */
+  justify-content: center
+    }
+    #galeri img{
+      width: 225px; /* Gerekirse sabit boyut ver */
+  height: auto;
+  object-fit: cover;
+    }
+    #galeri img:hover{
+  transform: scale(1.25); 
+    }
+        .stats-container {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #1e1f23;
+      color: whitesmoke;
+      text-align: center;
+    }
+
+    .stat-box {
+      flex: 1;
+      padding: 40px 20px;
+      min-width: 200px;
+      border-right: 1px solid #2a2b2f;
+    }
+
+    .stat-box:last-child {
+      border-right: none;
+    }
+
+    .stat-icon {
+      font-size: 40px;
+      color: #333333;
+      margin-bottom: 10px;
+    }
+
+    .stat-number {
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .stat-label {
+      margin-top: 8px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .stat-box {
+        flex: 100%;
+        border-right: none;
+        border-bottom: 1px solid #2a2b2f;
+      }
+
+      .stat-box:last-child {
+        border-bottom: none;
+      }
+    }
+    .stat-box:hover{
+      background-color: gray;
+    }
